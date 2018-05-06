@@ -1,0 +1,21 @@
+version: "2"
+options:
+  compose-file-path: 'docker-compose.yml'
+
+syncs:
+  symfony-sync:
+
+    sync_strategy: 'native_osx'
+
+    notify_terminal: true
+
+    src: './'
+
+    sync_host_ip: '127.0.0.1'
+
+    sync_host_port: 10872
+
+    # optional, a list of excludes for rsync - see rsync docs for details
+    sync_excludes: ['.git', '.gitignore', '.DS_Store', '.idea', 'docker', 'docker-sync.yml', 'docker-compose.yml', 'package.json', 'app/logs/*', 'app/cache/*', 'app/var/*']
+
+    sync_excludes_type: 'Name'
