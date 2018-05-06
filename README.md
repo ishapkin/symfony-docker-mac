@@ -5,10 +5,10 @@
 * https://github.com/docker/compose
 * https://github.com/EugenMayer/docker-sync
 ## Чтоб завелось:
-### установить docker-sync
+### 1.Установить docker-sync
     gem install docker-sync
-### скачать файлы с настройками в проект с Symfony 2+ (в корень)
-### забилдить php-fpm
+### 2. Cкачать файлы с настройками в проект с Symfony 2+ (в корень)
+### 3. Забилдить php-fpm
     docker-compose build
-### запустить синзронизацию и контейнеры
+### 4. Запустить синзронизацию и контейнеры
     make start
