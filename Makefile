@@ -2,7 +2,7 @@ OS := $(shell uname)
 
 start:
 ifeq ($(OS),Darwin)
-	docker volume create --name=export-sync
+	docker volume create --name=symfony-sync
 	docker-compose -f docker-compose.yml up -d
 	docker-sync clean
 	docker-sync start
